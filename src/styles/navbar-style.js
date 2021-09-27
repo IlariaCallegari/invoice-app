@@ -7,7 +7,7 @@ const useStyles = createUseStyles({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    background: colors.blue, 
+    background: colors.blue,
     borderRadius: "0 1.3rem 1.3rem 0",
   },
   logoCtn: {
@@ -35,11 +35,18 @@ const useStyles = createUseStyles({
     },
   },
   iconCtn: {
-      height: "6.438rem",
-      width: "100%",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center"
+    height: "6.438rem",
+    width: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    "& svg": {
+      cursor: "pointer",
+      transition: "fill 0.2s ease-in",
+      "&:hover": {
+        fill: "#fff",
+      },
+    },
   },
   avatarCtn: {
     height: "6rem",
@@ -49,11 +56,11 @@ const useStyles = createUseStyles({
     justifyContent: "center",
     borderTop: `1px solid rgba(126, 136, 195, 0.2)`,
     "& img": {
-        width: "2.5rem",
-        borderRadius: "50%"
-    }
-  }
-  
+      width: "2.5rem",
+      borderRadius: "50%",
+      
+    },
+  },
 });
 
 export default useStyles;

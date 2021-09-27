@@ -1,7 +1,8 @@
 import logo from "../assets/logo.svg";
-import iconMoon from "../assets/icon-moon.svg";
+import { ReactComponent as IconMoon } from "../assets/icon-moon.svg";
 import avatar from "../assets/image-avatar.jpg";
 import useStyles from "../styles/navbar-style";
+import colors from "../utils/colors"
 
 function Navbar() {
   const { navbar, logoCtn, iconCtn, avatarCtn } = useStyles();
@@ -13,7 +14,7 @@ function Navbar() {
       </div>
       <div>
         <div className={iconCtn}>
-          <img src={iconMoon} alt="moon Img" />
+          <IconMoon fill={colors.slate}/>
         </div>
         <div className={avatarCtn}>
           <img src={avatar} alt="user avatar img" />
